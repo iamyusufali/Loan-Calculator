@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap Link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- Mdb Bootstrap -->
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+    <!-- My CSS Styles -->
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <!-- Alert Section -->
+            <div class="alert alert-danger" role="alert">Check your numbers!</div>
+            <!-- Loan Calculator Section -->
+            <h1 class="heading display-5">Loan Calculator</h1>
+            <form id="calculator-form">
+              <div class="form-group mt-4">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <i class="fa fa-usd input-group-text  pt-2"></i>
+                  </div>
+                  <input type="number" id="amount" class="form-control" placeholder="Loan Amount">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <i class="fa fa-percent input-group-text pt-2 pr-2"></i>
+                  </div>
+                  <input type="number" id="interest" class="form-control" placeholder="Interest">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="number" id="years" class="form-control" placeholder="Years To Repay">
+                </div>
+              </div>
+              <button type="submit" class="btn btn btn-blue-elegant btn-block calculate">Calculate</button>
+            </form>
+            <!-- Gif Loader -->
+            <div class="loader">
+              <img src="./Img/loader.gif" >
+            </div>
+            <!-- Result Section -->
+            <div id="results" class="pt-4 mt-4">
+              <h4 class="mb-4">Results</h4>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text result-input">Monthly Payment</span>
+                  </div>
+                  <input id="monthly-pay" type="number" disabled class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text result-input total-input">Total Payment</span>
+                  </div>
+                  <input id="total-pay" type="number" disabled class="form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text result-input interest-input">Total Interest</span>
+                  </div>
+                  <input id="total-int" type="number" disabled class="form-control">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script File -->
+    <script src="script.js"></script>
+    <!-- MDB JS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/js/mdb.min.js"></script>
+  </body>
+</html>

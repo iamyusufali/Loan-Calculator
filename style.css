@@ -1,0 +1,71 @@
+.alert {
+  display: none;
+}
+
+#results {
+  display: none;
+  border-top: solid 2px #bdb5e4;
+}
+
+body {
+  /* background-color: #0a091fcc; */
+  background-color: #0a091fcc;
+  color: white;
+  font-family: 'Fira Code';
+}
+
+.card {
+  background-color: #2a3036;
+  box-shadow: 1px 1px 8px #bdb5e4;
+}
+
+.btn {
+  background-color: #16152ccc;
+  border: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #0a091fcc;
+  color: #fff;
+  box-shadow: 1px 1px 4px #cbc5e2;
+  transform: scaleX(1.02);
+}
+
+.input-group-prepend i {
+  background-color: #0a091fcc;
+  color: #bebdbd;
+  border-color: #0a091fcc;
+}
+
+.loader {
+  margin-top: 10px;
+  display: none;
+}
+
+.result-input {
+  border-right: 2px solid #bebdbd;
+  background-color: #0a091fcc;
+  color: #bebdbd;
+}
+
+.total-input {
+  padding-right: 30px;
+}
+
+.interest-input {
+  padding-right: 22px;
+}
+
+@media (max-width: 440px) {
+  .btn,
+  .result-input,
+  .input-group-prepend i {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+}
